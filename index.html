@@ -8,14 +8,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body> <!-- Tela de Carregamento -->
-  <div id="loading-screen" class="loading-screen">
+<body> <!-- Tela de Carregamento com vídeo de fundo -->
+  <div class="loading-screen">
+    <div class="video-background"> <video autoplay loop muted>
+        <source src="assets/universe-video.mp4" type="video/mp4">
+      </video> </div>
     <div class="loading-container"> <img src="assets/satellite.png" alt="Satélite" class="satellite-image">
       <div class="progress-bar-container">
         <div id="progress-bar" class="progress-bar"></div>
         <p id="progress-text" class="progress-text">0%</p>
       </div>
-      <p class="loading-text">Carregando Frequências de Satélite...</p>
+      <p class="loading-text">Carregando Frequências de Satélite...</p> <!-- Ícones do App -->
+      <div class="app-icons"> <img src="assets/icon1.png" alt="Ícone 1" class="app-icon" id="icon1"> <img
+          src="assets/icon2.png" alt="Ícone 2" class="app-icon" id="icon2"> <img src="assets/icon3.png" alt="Ícone 3"
+          class="app-icon" id="icon3"> </div>
     </div>
   </div> <!-- Conteúdo Principal -->
   <div id="main-content" class="main-content" style="display: none;">
@@ -25,12 +31,21 @@
         <p>Conectando você às frequências que transformam vidas.</p> <a href="#about" class="cta-button">Explorar
           Agora</a>
       </div>
-    </div>
+    </div> <!-- Seção Sobre o App -->
     <section id="about">
       <h2>Sobre o FrequenSys</h2>
       <p> Frequências para saúde e bem-estar, transmitidas diretamente via satélite. Escolha o que precisa e experimente
         uma nova era de cuidado. </p>
-    </section>
+    </section> <!-- Seção Imagens de Pessoas usando o App -->
+    <section id="users">
+      <h2>Pessoas Usando o FrequenSys</h2>
+      <div class="user-images"> <img src="assets/happy-person1.jpeg" alt="Pessoa feliz usando o app"> <img
+          src="assets/happy-person2.jpeg" alt="Crianças usando o app"> <img src="assets/doctor.jpeg"
+          alt="Médico usando o app"> </div>
+      <p>Veja como o FrequenSys está transformando a vida de muitas pessoas ao redor do mundo.</p>
+    </section> <!-- Navegação -->
+    <section class="navigation"> <a href="#about" class="nav-link">Sobre</a> <a href="#users" class="nav-link">Pessoas
+        Usando</a> <a href="#contact" class="nav-link">Contato</a> </section> <!-- Rodapé -->
     <footer>
       <p>&copy; 2024 FrequenSys. Todos os direitos reservados.</p>
     </footer>
